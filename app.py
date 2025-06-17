@@ -43,7 +43,7 @@ This model uses key demographic, economic, and campaign features to make predict
 # Sidebar for model info
 with st.sidebar:
     st.header("📊 Model Information")
-    st.info(f"**Features Used:** {len(feature_columns)}")
+    st.info(f"**Features Used:** 13")
     st.info("**Model Type:** Machine Learning Classifier")
     
     st.header("📈 How to Use")

@@ -2,11 +2,11 @@
 
 A machine learning project that predicts whether a bank client will subscribe to a term deposit based on marketing campaign data. Built with Python, Scikit-learn, and deployed with Streamlit.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project analyzes bank marketing campaign data to predict client subscription to term deposits using machine learning algorithms. The model helps banks optimize their marketing strategies by identifying clients most likely to subscribe.
 
-## 📊 Dataset
+## Dataset
 
 - **Records**: 41,188 client interactions
 - **Original Features**:  20 input variables plus target variable 
@@ -14,7 +14,7 @@ This project analyzes bank marketing campaign data to predict client subscriptio
 - **Time Period**: Banking campaign data
 - **Class Distribution**: Imbalanced dataset (~11.3% positive class)
 
-## 🚀 Features
+## Features
 
 - **Data Preprocessing**: Handles missing values and categorical encoding
 - **Class Imbalance**: Uses SMOTE oversampling technique
@@ -22,7 +22,7 @@ This project analyzes bank marketing campaign data to predict client subscriptio
 - **Feature Engineering**: Focused selection of key banking features
 - **Interactive Dashboard**: Streamlit web application for predictions
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3.8+**
 - **Machine Learning**: Scikit-learn, XGBoost, Imbalanced-learn
@@ -76,13 +76,7 @@ This project analyzes bank marketing campaign data to predict client subscriptio
 
 ---
 
-## Notes:
-- **Dataset Size**: 41,188 observations
-- **Target Distribution**: 88.7% "no", 11.3% "yes" (highly imbalanced)
-- **Missing Values**: Represented as "unknown" in categorical variables
-- **Economic Indicators**: Capture macroeconomic conditions during campaign period
-- **Duration**: Important predictor but should not be used for realistic prediction (only known after call ends)
-## 📁 Project Structure
+## Project Structure
 
 ```
 term-deposit-prediction/
@@ -125,7 +119,7 @@ python term_deposit_prediction.py
 streamlit run app.py
 ```
 
-## 🎯 Model Performance
+## Model Performance
 
 The project evaluates three machine learning models:
 
@@ -137,7 +131,7 @@ The project evaluates three machine learning models:
 
 **Best Model Selection**: Automatically selects the model with highest ROC AUC score.
 
-## 🔍 Key Features Used
+## Key Features Used
 
 The model focuses on 13 key banking features:
 
@@ -146,7 +140,7 @@ The model focuses on 13 key banking features:
 - **Economic Indicators**: Employment rate, consumer price index, Euribor rate
 - **Previous Outcomes**: Results from previous campaigns
 
-## 📈 Results & Insights
+## Results & Insights
 
 ### Feature Importance
 The analysis reveals the most predictive features for term deposit subscription:
@@ -167,24 +161,9 @@ The analysis reveals the most predictive features for term deposit subscription:
 <!-- Add your deployed app links here -->
 - **Streamlit Cloud**: [https://bank-term-deposit-prediction-7jgw7a89zirhwjc2ckverg.streamlit.app/]
 
-## 📸 Screenshots
-
-### Model Performance Dashboard
-![Model Performance](images/model_performance.png)
-*Comparison of different machine learning models with ROC AUC scores and confusion matrices*
-
-### Feature Importance Analysis
-![Feature Importance](images/feature_importance.png)
-*Top 10 most important features for predicting term deposit subscription*
-
 ### Streamlit Web Application
 ![Streamlit App](images/streamlit_app.png)
 *Interactive web interface for making real-time predictions*
-
-### Correlation Heatmap
-![Correlation Matrix](images/correlation_heatmap.png)
-*Correlation analysis of numerical features in the dataset*
-
 
 ## Contributing
 1. Fork the repository
@@ -198,7 +177,5 @@ The analysis reveals the most predictive features for term deposit subscription:
 ## 👨‍💻 Author
 
 **Paula Obeng-Bioh**
-- GitHub: [@yourusername](https://github.com/yourusername)
 - LinkedIn: [Paula Obeng-Bioh](www.linkedin.com/in/paula-obeng-bioh-38a58a190)
 
-⭐ **If you found this project helpful, please give it a star!** ⭐
