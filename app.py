@@ -90,11 +90,11 @@ with st.form("prediction_form"):
     
     with col2:
         st.markdown("**📞 Campaign Details**")
-        duration = st.slider(
-            "Call Duration (seconds)", 
-            min_value=0, max_value=2000, value=200,
-            help="Duration of the last contact call"
-        )
+        # duration = st.slider(
+        #     "Call Duration (seconds)", 
+        #     min_value=0, max_value=2000, value=200,
+        #     help="Duration of the last contact call"
+        # )
         
         campaign = st.slider(
             "Campaign Contacts", 
@@ -163,8 +163,8 @@ if submitted:
         # Fill numerical features
         if 'age' in feature_columns:
             input_data['age'] = age
-        if 'duration' in feature_columns:
-            input_data['duration'] = duration
+        # if 'duration' in feature_columns:
+        #     input_data['duration'] = duration
         if 'campaign' in feature_columns:
             input_data['campaign'] = campaign
         if 'pdays' in feature_columns:
@@ -227,18 +227,20 @@ if submitted:
         with insights_col1:
             st.markdown("**Key Factors:**")
             factors = []
-            if duration > 300:
-                factors.append("• Long call duration (positive indicator)")
-            elif duration < 100:
-                factors.append("• Short call duration (negative indicator)")
             
-            if campaign > 3:
-                factors.append("• High contact frequency (may indicate persistence needed)")
+            # Top factors based on XGBoost importance
+            if emp_var_rate > 0:
+                factors.append("• Favorable employment trend (positive indicator)")
+            elif emp_var_rate < -2:
+                factors.append("• Economic uncertainty (may drive interest)")
             
             if previous > 0 and poutcome == 'success':
                 factors.append("• Previous successful campaign (very positive)")
             elif poutcome == 'failure':
                 factors.append("• Previous campaign failed (negative indicator)")
+            
+            if marital == 'single':
+                factors.append("• Single status (higher tendency)")
             
             if factors:
                 for factor in factors:
