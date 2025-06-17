@@ -80,14 +80,18 @@ This project analyzes bank marketing campaign data to predict client subscriptio
 
 ```
 term-deposit-prediction/
-├── term_deposit_prediction.py    # Main analysis script
-├── app.py              # Streamlit web application
-├── best_bank_model.pkl           # Trained model (best performing)
-├── feature_columns.pkl           # Feature columns for preprocessing
-├── requirements.txt              # Python dependencies
-├── README.md                     # Project documentation
 └── data/
-    └── bank-additional-full.csv  # Dataset (if included)
+    └── bank-additional-full.csv  # Dataset
+└── model/
+    └── best_bank_model.pkl       # Trained model (best performing)
+    └── feature_columns.pkl       # Feature columns for preprocessing 
+└── notebook/
+    └── term_deposit_prediction   # Main Analysis Script
+├── app.py                        # Streamlit web application
+├── project_report
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
+
 ```
 
 ## 🔧 Installation & Setup
