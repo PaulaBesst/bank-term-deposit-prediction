@@ -3,8 +3,15 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
+import random
+import os
 from datetime import datetime
 
+# Set all random seeds
+RANDOM_SEED = 42  # Use same number for both versions
+np.random.seed(RANDOM_SEED)
+random.seed(RANDOM_SEED)
+os.environ['PYTHONHASHSEED'] = str(RANDOM_SEED)
 # Configure page
 st.set_page_config(
     page_title="Bank Term Deposit Predictor",
