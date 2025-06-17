@@ -166,7 +166,10 @@ The analysis reveals the most predictive features for term deposit subscription:
 - **Streamlit Cloud**: [https://bank-term-deposit-prediction-7jgw7a89zirhwjc2ckverg.streamlit.app/]
 
 ### Streamlit Web Application
-![Streamlit App](images/streamlit_app.png)
+![Streamlit App](images/predict_1.png)
+
+![Streamlit App](images/predict_2.png)
+
 *Interactive web interface for making real-time predictions*
 
 ## Contributing
