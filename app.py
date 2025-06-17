@@ -62,7 +62,7 @@ with st.form("prediction_form"):
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("**👤 Demographics**")
+        st.markdown("**👤 DEMOGRAPHICS**")
         age = st.slider("Age", min_value=18, max_value=95, value=35, help="Client's age in years")
         
         job = st.selectbox(
@@ -89,7 +89,7 @@ with st.form("prediction_form"):
         )
     
     with col2:
-        st.markdown("**📞 Campaign Details**")
+        st.markdown("**📞 CAMPAIGN DETAILS**")
         # duration = st.slider(
         #     "Call Duration (seconds)", 
         #     min_value=0, max_value=2000, value=200,
@@ -122,7 +122,7 @@ with st.form("prediction_form"):
         )
     
     # Economic indicators section
-    st.markdown("**📊 Economic Indicators**")
+    st.markdown("**📊 ECONOMIC INDICATORS**")
     eco_col1, eco_col2 = st.columns(2)
     
     with eco_col1:
